@@ -1,0 +1,59 @@
+/*LARGE DESKTOP - Pantallas grandes - computadoras de escritorio*/
+@media (min-width: 1200px) {
+	
+}
+/*MEDIUM DESKTOP - Escritorio medio - Tablet posición horizontal*/
+@media (max-width: 1199px) and (min-width: 992px) {
+	
+}
+/*TABLETS - Tablet posición vertical*/
+@media (max-width: 991px) and (min-width: 768px) {
+	/* ---- MAIN SECTION ---- */
+	.section-main {
+		background-position: right;
+	}
+	.container-text {
+		text-align: center;
+		margin-right: 0em;
+	}
+	/* --- CONTENT --- */
+	.section-content {
+		padding-bottom: 5em;
+		height: auto;
+	}
+	/* --- ME --- */
+	#hire .container-information,
+	#showcase .container-information {
+		max-width: 100%;
+	}
+}
+/*PHONES*/
+@media (max-width: 767px) {
+	/* ---- MAIN SECTION ---- */
+	.section-main {
+		background-position: right;
+		height: auto;
+	}
+	.container-text {
+		text-align: center;
+		padding: 10em 0;
+		margin-right: 0em;
+	}
+	/* --- CONTENT --- */
+	.section-content {
+		padding-bottom: 5em;
+		height: auto;
+	}
+	/* --- HABILITIES ---- */
+	.text-habilities {
+		margin-bottom: 3em;
+	}
+	/* --- PROYECTS --- */
+	.figure-proyect {
+		float: right;
+	}
+	/* --- CONTACTO --- */
+	.section-footer {
+		padding-top: 2em;
+	}
+}

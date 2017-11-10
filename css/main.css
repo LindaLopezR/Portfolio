@@ -1,0 +1,323 @@
+* {
+	font-family: 'Crimson Text', serif;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 100%;
+}
+.animation {
+	visibility: visible;
+}
+
+/* ---- MENU ---- */
+.navbar {
+	border-radius: 0px!important;
+	margin-bottom: 0%!important;
+}
+.navbar-toggle {
+	border-color: #fff!important;
+}
+.navbar-toggle .icon-bar {
+	background-color: #fff!important;
+}
+.menu-item {
+	margin: 0.5em 0;
+}
+.menu-link {
+	text-align: center;
+	font-size: 1.05em;
+	font-weight: bold;
+	color: #b5b5b5;
+	padding: 1em;
+	width: 120px;
+	height: 3em;
+}
+.navbar-color,
+.menu-link:hover,
+.menu-link:focus {
+	background-color: rgb(0, 0, 0)!important;
+	color: #929292!important;
+}
+
+/* ---- MAIN SECTION ---- */
+.section-main {
+	background-image: url(../img/fondo1-2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+}
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height:100%;
+}
+.container-text {
+	text-align: right;
+	padding: 15.5em 0;
+	margin-right: 60em;
+}
+.title-main {
+	font-family: 'Poiret One', cursive;
+	font-size: 3.55em;
+}
+.title-main, 
+.subtitle-main {
+	color: #F8FDFC;
+}
+.scroll-arrow {
+	border: 1px solid white;
+	position: absolute;
+	text-align: center;
+	border-radius: 50%;
+	line-height: 52px;
+	font-size: 35px;
+	display: block;
+	margin: 0 auto;
+	bottom: 20px;
+	height: 50px;
+	color: #fff;
+	width: 50px;
+	left: 50%;
+}
+.scroll-arrow:focus {
+	color: #fff;
+}
+
+/* --- CONTENT --- */
+.section-content {
+	height: 90vh;
+}
+.separator-container {
+	text-align: center;
+	position: relative;
+}
+.line-separator{
+	margin: 0 auto 1em;
+	color: #c5a47e;
+	width: 11em;
+}
+.line-separator:after {
+	float: right;
+}
+.line-separator:before {
+	float: left;
+}
+.line-separator:before,
+.line-separator:after {
+	content: " ";
+	border: 1px solid #c5a47e;
+	margin-top: 14px;
+	display: block;
+	width: 40%;  
+}
+.section-me,
+.section-habilities,
+.section-proyects,
+.section-footer {
+	background-attachment: fixed;
+	background-repeat: repeat;
+	padding-top: 5em;
+}
+
+/* --- ME --- */
+.section-me,
+.section-proyects {
+	background-image: url(../img/paper.png);
+}
+.container-information {
+	max-width: 75%;
+	margin: auto;
+}
+.text-content {
+	font-size: 1.2em;
+}
+.btn-info {
+	background: linear-gradient(rgb(197, 164, 126) 5%, rgb(197, 164, 126) 100%) rgb(197, 164, 126);
+	box-shadow: rgb(239, 220, 251) 0px 1px 0px 0px inset;
+	border: 1px solid rgb(197, 164, 126);
+	color: rgb(255, 255, 255);
+	border-radius: 28px;
+}
+.btn-info:hover,
+.btn-info:focus {
+	background: linear-gradient(rgb(134, 112, 86) 5%, rgb(197, 164, 126) 100%) rgb(197, 164, 126);
+	border: 1px solid rgb(197, 164, 126);
+}
+
+/* --- HABILITIES ---- */
+.section-habilities {
+	background-image: url(../img/dark.png);
+	padding-bottom: 5em;
+	color: #fff;
+}
+.section-habilities .progress {
+	height: 0.5em!important;
+}
+.text-habilities {
+	font-size: 1.2em;
+	padding-top: 10px;
+}
+.progress-bar {
+	background-color: #c5a47e;
+}
+
+/* --- PROYECTS --- */
+.section-proyects {
+	padding-bottom: 5em;
+}
+.figure-proyect {
+    float: left;
+}
+.icon-proyect {
+	display: inline-block;
+	height: 220px;
+	width: 220px;
+	margin: 20px;
+}
+.item-proyect {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	height: 100%;
+	width: 100%;
+}
+.info-proyect {
+	background: #f9f9f9;
+	left: 20px;
+	top: 20px;
+	box-shadow: 
+		0 0 0 20px rgba(255,255,255,0.2), 
+		inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+.info-proyect, 
+.circle-proyect {
+	position: absolute;
+	border-radius: 50%;
+	height: 180px;
+	width: 180px;
+}
+/* -- Images proyect -- */
+.image-proyect,
+.detail-proyect {
+	background-position: center center;
+	position: absolute;
+	border-radius: 50%;
+	display: block;
+	height: 100%;
+	width: 100%;
+	-webkit-backface-visibility: hidden;
+}
+.item-proyect:hover .image-proyect {
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	opacity: 0;
+} 
+.item-proyect:hover .detail-proyect {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+	pointer-events: auto;
+}
+.image-proyect {
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+}
+.proyect-img1 {
+	background-image: url(../img/logo-1.jpg);
+}
+.proyect-img2 {
+	background-image: url(../img/logorocket.jpg);
+}
+.proyect-img3 {
+	background-image: url(../img/logo-5.png);
+}
+.proyect-img4 {
+	background-image: url(../img/logo-7.png);
+}
+.detail-proyect {
+	pointer-events: none;
+	background: #223e87;
+	opacity: 0;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: all 0.4s ease-in-out 0.2s;
+	-moz-transition: all 0.4s ease-in-out 0.2s;
+	-ms-transition: all 0.4s ease-in-out 0.2s;
+	-o-transition: all 0.4s ease-in-out 0.2s;
+	transition: all 0.4s ease-in-out 0.2s;
+}
+/* -- Info proyect -- */
+.title-proyect {
+	text-transform: uppercase;
+	padding: 0.8em 0 0 0;
+	letter-spacing: 2px;
+	font-size: 1.1em;
+	color: #fff;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+.text-proyect {
+	border-top: 1px solid rgba(255,255,255,0.5);
+	padding: 5px 5px 0;
+	font-size: 1rem;
+	margin: 0 30px;
+	color: #fff;
+	opacity: 1!important;
+}
+.view-proyect {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-style: normal;
+	font-weight: 700;
+	padding-top: 4px;
+	font-size: 12px;
+	display: block;
+	color: #e7615e;
+}
+.view-proyect:hover {
+	color: #fff;
+}
+/* -- Moda -- */
+.img-modal {
+	width: 100%;
+}
+/* -- Carousel -- */
+.carousel-caption {
+	background-color: rgba(197, 164, 126, 0.82);
+	padding-top: 0!important;
+	right: 0!important;
+	left: 0!important;
+	width: 100%;
+}
+.image-carousel {
+	width: 100%;
+}
+
+/* --- CONTACTO --- */
+.section-footer {
+	background-image: url(../img/curls.png);
+	color: #fff;
+}
+.contacto {
+	padding: 5% 0;
+}
+.ending {
+	margin: 5% 0 2% 0;
+}
